@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from "react";
+import Header from "./Home/Header";
+import Home from "./Home/Home";
+import ThongTin from "./Home/ThongTin";
+import DongVatNhanNuoi from "./Home/DongVatNhanNuoi";
+import TinTuc from "./Home/TinTuc";
+import SanPham from "./Home/SanPham";
+import Api from "./Home/Api";
+import Footer from "./Home/Footer";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Home />  
+      <ThongTin /> 
+      <DongVatNhanNuoi />
+      <TinTuc />
+      <SanPham /> 
+      <Api /> 
+      <Footer />
     </div>
   );
 }
