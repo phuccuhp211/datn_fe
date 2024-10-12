@@ -1,0 +1,31 @@
+.thongKe{
+    background-image: url("../../public/image/thongke.png");
+    background-size: cover;
+}
+.columCards {
+    width: 1140px;
+    margin: auto;
+    display: grid; /* Dùng Flexbox */
+    grid-template-columns:  repeat(4, 1fr); /* Chia thành 3 cột có kích thước đều nhau */; 
+      gap: 30px; /* Khoảng cách giữa các thẻ */
+      padding: 40px 0;
+    }
+
+.imageThongKe img{
+
+width: 110px;
+height: 110px;
+border-radius: 50%;
+}
+.card{
+    text-align: center;
+}
+.thongKeTT h2{
+    font-size: 32px;
+    line-height: 20px;
+    color: white;
+}
+.thongKeTT p{
+    font-size: 25px;
+    color: white;
+}

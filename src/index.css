@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Khai báo font chữ CustomFont1 */
+  @font-face {
+    font-family: 'CustomFont1';
+    src: url('../public/cantarell/Cantarell-Regular.otf') ;
+        
+    font-weight: normal;
+    font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Khai báo font chữ CustomFont2 */
+@font-face {
+    font-family: 'CustomFont2';
+    src: url('../public/comme/Comme-Regular\ \(1\).ttf') ;
+       
+    font-weight: normal;
+    font-style: normal;
 }
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    font-family: sans-serif;
+}
+

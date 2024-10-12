@@ -1,0 +1,76 @@
+
+/* Container chứa các thẻ card */
+.columCard {
+
+  width: 1140px;
+  margin: auto;
+  display: flex; /* Dùng Flexbox */
+    justify-content: space-between; /* Căn đều các thẻ card */
+    gap: 30px; /* Khoảng cách giữa các thẻ */
+    padding: 15px;
+  }
+
+  
+  .card {
+    background-color: #334B75;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 255px; /* Chiều rộng của mỗi thẻ */
+    height: 285px;
+    text-align: center;
+    position: relative; /* Để tạo không gian cho nền */
+    border: 2px solid transparent; /* Viền mặc định trong suốt */
+    transition: border 0.3s; /* Hiệu ứng khi di chuột qua thẻ */
+  }
+  
+  .card:hover {
+    border: 2px solid #2c3e50; /* Viền màu khi hover */
+    
+  }
+  
+  .imageTht {
+   background-color: #ffffff;
+   margin: 25px auto;
+   width: 100px;
+   height: 100px;
+border-radius: 50%;
+border: 2px solid black;
+
+  }
+ 
+  
+  h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .thongtin p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px ;
+  }
+  
+  .nuttimhieu {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  0.3s;
+    font-size: 19px;
+  }
+  
+  .nuttimhieu:hover {
+    background-color: #1A252F;
+  }
+  .thongtin{
+    width: 220px    ;
+    height: 265px;
+    background-color: #E6E6E6;
+    margin-bottom: 20px;
+    position: relative;
+    margin: -80px auto 20px;
+    overflow: hidden;
+    border-radius: 30px;
+  }

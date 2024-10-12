@@ -1,0 +1,66 @@
+.columCards {
+
+    width: 1140px;
+    margin: auto;
+    display: grid; /* Dùng Flexbox */
+    grid-template-columns:  repeat(3, 1fr); /* Chia thành 3 cột có kích thước đều nhau */; 
+      gap: 30px; /* Khoảng cách giữa các thẻ */
+      padding: 15px;
+    }   
+
+.card{
+    width: 350px;
+    height: 490px;
+    border: 1.5px solid gainsboro;
+    border-radius: 5px;
+  
+}
+.tintuc h1{
+    padding: 30px 0px 10px 0px;
+    text-align: center;
+    font-size: 36px;
+}
+.imageTintuc img{
+margin-top: 2px;
+width: 344px;
+height: 290px;
+border-radius: 5px 5px 0 0 ;
+}
+.imageTintuc{
+    text-align: center;
+}
+.tieuDe{
+  font-size: 24px;
+  width: 320px;
+  height: 75px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.TT{
+    margin-top: 10px;
+    color: #555555;
+    font-size: 15px;
+    line-height: 25px;
+}
+.btnTT{
+    text-align: center;
+    margin-top: 25px;
+}
+.btnTT button{
+    font-size: 18px;
+    width: 175px;
+    height: 50px;
+    background-color: #3B8CEB;
+    border: #3B8CEB;
+    border-radius: 30px;
+    font-weight:bold ;
+    margin-bottom: 40px;
+}
+.tintuc{
+   
+    border-bottom: 1px solid black;
+}
+.card p{
+    padding: 0px 10px;
+}

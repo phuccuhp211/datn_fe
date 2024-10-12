@@ -1,0 +1,78 @@
+.noiDung1{   
+    background-image: url("../../public/image/thongke.png");
+    background-size: cover;
+}
+.tiemPhong{
+   padding: 40px 0px 40px 0px;
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.TTTiemPhong{
+    font-size: 28px;
+    color: white;
+    line-height: 60px;
+    
+}
+.btnTiemPhong button{
+    font-size: 22px;
+    width: 255px;
+    height: 60px;
+    background-color: #313852;
+    border-radius: 200px;
+    border :#313852;
+    color: white;
+    font-weight: 100;
+}
+
+.thongTinLH{
+    margin: auto;
+    width: 1140px;
+   margin-top: 50px;
+}
+.hop{
+background-color: #313852;
+width: 260px;
+height: 140px;
+float: left;
+}
+.baoTT{
+width: 530px;
+float: left;
+}
+.veChungToi{
+margin: 0px 10px 0px 10px;
+}
+.fanPage{
+background-color: #313852;
+width: 350px;
+height: 175px;
+float: left;
+}
+.nD{
+    font-size: 27px;
+    
+}
+.nD1{
+    font-size: 27px;
+   margin-top: 20px;
+}
+.tT{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.veChungToi hr{
+    width: 100px;
+   color: black;
+   background-color: black;
+   height: 2px;
+}
+.compry{
+    height: 60px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 60px;
+}
