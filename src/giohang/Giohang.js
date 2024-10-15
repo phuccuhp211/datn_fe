@@ -62,7 +62,7 @@ return acc + (Number(item.gia) * Number(item.quantity));
                   <td className={styles.tensp}>
                     <img src='../image/gioithieu2.png' alt="Sản phẩm" />
                   </td>
-                  <td className={styles.tensp}>
+                  <td className={styles.tenspp}>
                     {item.tenSp} - {item.selectedType}
                   </td>
                   <td className={styles.tensp}>{Number(item.gia).toLocaleString()} VND</td>

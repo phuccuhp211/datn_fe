@@ -1,11 +1,13 @@
   // show san pham o trang chu
   import styles from '../home-css/Sanpham.module.css';
-  import React, { useState } from 'react';
 
-  import { Link } from 'react-router-dom';
+  import React , { useState ,useEffect} from 'react';
+  import { Link ,useNavigate } from 'react-router-dom';
   import '../home-css/Sanpham.module.css';
 
-  // Component cho popup
+
+  function Sanpham() {
+ // Component cho popup
   function Popup({ product, isOpen, onClose }) {
     if (!isOpen) return null;
 
@@ -16,20 +18,51 @@
           <h2>{product.tenSp}</h2>
           <img src={product.image} alt={product.tenSp} style={{ width: '200px' }} />
           <p><strong>Giá:</strong> {product.gia} VND</p>
-          <button className={styles.muahang} onClick={() => alert('Đã thêm sản phẩm vào giỏ hàng')}>Thêm vào giỏ</button>
+          <button className={styles.muahang} onClick={() => addToCart(product)}>Thêm vào giỏ</button>
         </div>
       </div>
     );
   }
-
-
-
-  
-  function Sanpham() {
     //  kiểm soát popup
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
+
+    // Thêm sản phẩm vào giỏ hàng từ popup
+const [cart, setCart] = useState([]); // khởi tạo giỏ hàng ban đầu là rỗng 
+const navigate = useNavigate(); // Khởi tạo navigate
+const [quantity, setQuantity] = useState(1); // State để theo dõi số lượng
+
+useEffect(() => {
+    const savedCart = localStorage.getItem('cart'); // lưu giỏ hàng để khi reload không bị mất
+    if (savedCart) {
+        setCart(JSON.parse(savedCart));
+    }
+}, []);
+
+const addToCart = (product) => {
+    setCart((prevCart) => {
+       const existingProduct = prevCart.find(item => item.id === product.id);  // Xét theo giỏ hàng theo id sản phẩm
+        let newCart;
+
+        if (existingProduct) {
+            // nếu có rồi thì thêm 1 vào số lượng 
+            newCart = prevCart.map(item => 
+                item.id === product.id ? { ...item, quantity: Number(item.quantity) + Number(quantity) } : item
+            );
+        } else {
+            // còn chưa có thì tạo sản phẩm mới trong giỏ hàng 
+            newCart = [...prevCart, { ...product, quantity: 1 }];
+        }
+
+        localStorage.setItem('cart', JSON.stringify(newCart));
+        // Chuyển hướng sang trang giỏ hàng
+        navigate('/giohang'); 
+        return newCart;
+    });
+   
+      
+  };
     // Danh sách sản phẩm dữ liệu mẫu
    const products = [
   { id: 1, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: 300000, image: '../image/gioithieu2.png', loai: 'chó' },

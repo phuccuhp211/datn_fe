@@ -52,6 +52,7 @@ table {
 
 
 .tensp1 {
+    margin: 10px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +61,7 @@ table {
 
 
 .tensp img {
+    margin: 10px 0px;
     width: 100px;
     height:100px;
     object-fit: cover;
