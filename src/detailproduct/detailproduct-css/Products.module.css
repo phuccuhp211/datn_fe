@@ -1,0 +1,152 @@
+.duongDan{
+    background-color: #EBEBEB;
+    margin-bottom: 20px;
+}
+.link{
+    width: 1140px;
+    margin: auto;
+   height: 50px;
+   
+}
+.link a{
+    text-decoration: none;
+    color: black;  
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.bocChitiet {
+   
+    width: 1140px;
+     margin: auto;
+     padding: 15px;
+}
+.bocanh{
+ width: 50%;
+ float: left;
+align-items: center;
+}
+.anhPhu {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    
+}
+
+.anhPhu img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    border: 0.5px solid black;
+}
+
+.anhPhu img.active {
+    opacity: 1;
+}
+
+.mainImage{
+    float: right;
+    width: 450px;
+}
+.mainImage img {
+ width: 440px;
+ height: 445px;
+ box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.135);
+}
+
+.baottChiTiet {
+    width: 50%;
+    float: right;
+}
+.ttChiTiet{
+    margin-left: 10px;
+}
+
+.ttChiTiet h1 {
+    font-size: 22px;
+    line-height: 31px;
+    text-transform: uppercase;
+    height: 65px;
+}
+.ttChiTiet .thuongHieu{
+    font-size: 14px;
+}
+
+.ttChiTiet .baoGia {
+  margin: 20px 0px;
+   display: flex;
+   font-weight: bold;
+}
+
+.ttChiTiet .giaCu {
+    text-decoration: line-through;
+    font-size: 28px;
+}
+
+.ttChiTiet .giaMoi {
+    color: red;
+    font-size: 28px;
+}
+.options{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.options button {
+   width: 170px;
+   height: 40px;
+   font-size: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  
+}
+
+ h4{
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.soLuong{
+margin: 20px 0px 10px 0px;
+}
+.quantity input {
+    width: 115px;
+    height: 50px;
+    margin-right: 10px;
+    padding-left: 10PX;
+    font-size: 18px;
+    color: #6E6E6E;
+    border-radius: 5px;
+
+}
+
+.addToCartBtn {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.anhPhu .arrows {
+text-align: center;
+}
+
+.arrows button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+   
+ 
+}

@@ -3,7 +3,9 @@ import styles from './Footers.module.css';
 import './Footers.module.css';
 function Footers(){
 return(
+
 <div className={styles.footers}>
+{<div style={{clear:'both'}}></div>}
    <div className={styles.noiDung1}>
    <div className={styles.tiemPhong}>
         <div className={styles.TTTiemPhong}>

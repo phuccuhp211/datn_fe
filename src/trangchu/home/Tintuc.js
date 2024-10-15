@@ -1,6 +1,8 @@
-import styles from './Tintuc.module.css';
+// phan tin tuc o trang chu
 
-import './Tintuc.module.css';
+import styles from '../home-css/Tintuc.module.css';
+
+import '../home-css/Tintuc.module.css';
 function Tintuc(){
 return(
 <div className={styles.tintuc}>

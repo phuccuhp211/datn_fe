@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-// CSS nội tuyến cho banner
+// CSS
 const styles = {
   banner: {
     width: '100%',
@@ -11,7 +11,7 @@ const styles = {
   },
   bannerItems: {
     display: 'flex',
-    transition: 'transform 0.8s ease-in-out', // Sử dụng transition dài hơn và easing
+    transition: 'transform 0.8s ease-in-out', // Sử dụng transition \
   },
   item: {
     minWidth: '100%',
@@ -33,15 +33,15 @@ const Banner = () => {
   const bannerRef = useRef(null); // Tạo ref để điều khiển element
   const intervalTime = 3000; // Thời gian chuyển slide
 
-  // URL của từng ảnh (lưu trực tiếp)
+  // Lưu ảnh trực tiếp trong đây 
   const image1 = "../image/banner.png";
   const image2 = "../image/banner.png";
   const image3 = "../image/banner.png";
 
-  // Thêm clone đầu và cuối vào banner items để tạo hiệu ứng mượt mà
+  // Thêm ảnh 3 ở đầu và ảnh 1 ở cuối chuyển trang cho mượt 
   const totalBanners = [image3, image1, image2, image3, image1];
 
-  // Hàm tự động chạy banner sau mỗi `intervalTime`
+  // Hàm tự động chạy banner sau khi intervalTime
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setIsTransitioning(true);
@@ -86,7 +86,7 @@ const Banner = () => {
   return (
     <div style={styles.banner}>
       <div style={styles.bannerItems} ref={bannerRef}>
-        {/* Sử dụng các ảnh từ URL mà không cần lưu trong mảng */}
+      
         {totalBanners.map((imgSrc, index) => (
           <div style={styles.item} key={index}>
             <img src={imgSrc} alt={`Banner ${index}`} style={styles.image} />

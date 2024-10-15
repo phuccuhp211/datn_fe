@@ -1,6 +1,8 @@
-import styles from './Dongvat.module.css';
+// Show dong vat o trang chu
 
-import './Dongvat.module.css';
+import styles from '../home-css/Dongvat.module.css';
+
+import '../home-css/Dongvat.module.css';
 function Dongvat(){
 return(
 <div className={styles.background}>

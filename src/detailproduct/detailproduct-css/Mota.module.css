@@ -1,0 +1,35 @@
+.mota{
+    width: 1140px;
+    margin: auto; 
+}
+.hopmota{
+    width: 140px;
+    height: 65px;
+    font-size: 18px;
+    background-color: #777575;
+   
+}
+.hopmota p{
+    line-height: 65px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.bocNgoai{
+    border: 1px solid #CBCBCB;
+    border-radius:  0px 10px 10px 10px;
+    padding-bottom: 30px;
+}
+.thongTinBoc{
+    margin: 25px;
+    line-height: 25px;
+}
+.bocmota{
+    margin-top: 150px;
+}
+.textMoTa{
+    font-weight: bold;
+}
+.hang{
+    margin-bottom: 20px;
+}

@@ -1,21 +1,18 @@
 import React from 'react';
 
 
-import Gioithieu from './Gioithieu';
-import Tht from './Tht';
-import Dongvat from './Dongvat';
-import Tintuc from './Tintuc';
-import Thongke from './Thongke';
-import Sanpham from './Sanpham';
-
-import Banner from './Banner';
+import Gioithieu from './home/Gioithieu';
+import Tht from './home/Tht';
+import Dongvat from './home/Dongvat';
+import Tintuc from './home/Tintuc';
+import Thongke from './home/Thongke';
+import Sanpham from './home/Sanpham';
+import Banner from './home/Banner';
 
 function Home() {
   return (
     <div>
       {/* Gọi các component nhỏ để tạo thành trang Home hoàn chỉnh */}
-    
-   
     <Banner/>
     <Gioithieu />
     <Tht/>

@@ -1,6 +1,8 @@
-import styles from './Gioithieu.module.css';
+// phan gioi thieu VE CHUNG TOI cua trang chu
 
-import './Gioithieu.module.css';
+import styles from '../home-css/Gioithieu.module.css';
+
+import '../home-css/Gioithieu.module.css';
 function Gioithieu(){
 return(
 <div>

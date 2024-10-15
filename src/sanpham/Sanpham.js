@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-import GioithieuSP from './GioithieuSP';
-import TimkiemSP from './TimkiemSP';
-import Product from './Product';
+import GioithieuSP from './sanpham-js/GioithieuSP';
+import TimkiemSP from './sanpham-js/TimkiemSP';
+import Product from './sanpham-js/Product';
 
 
 function Home() {

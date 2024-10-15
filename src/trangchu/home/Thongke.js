@@ -1,6 +1,7 @@
-import styles from './Thongke.module.css';
+// bang thong ke o trang chu
+import styles from '../home-css/Thongke.module.css';
 
-import './Thongke.module.css';
+import '../home-css/Thongke.module.css';
 function Thongke(){
 return(
 <div className={styles.thongKe}>

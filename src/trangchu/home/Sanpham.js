@@ -1,7 +1,9 @@
+  // show san pham o trang chu
+  import styles from '../home-css/Sanpham.module.css';
   import React, { useState } from 'react';
-  import styles from './Sanpham.module.css';
+
   import { Link } from 'react-router-dom';
-  import './Sanpham.module.css';
+  import '../home-css/Sanpham.module.css';
 
   // Component cho popup
   function Popup({ product, isOpen, onClose }) {
@@ -20,31 +22,34 @@
     );
   }
 
+
+
+  
   function Sanpham() {
-    // State để kiểm soát popup
+    //  kiểm soát popup
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
 
-    // Danh sách sản phẩm (dữ liệu mẫu)
-    const products = [
-      { id: 1, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: '300,000', image: '../image/gioithieu2.png',loai:'chó' },
-      { id: 2, tenSp: 'Thức ăn cho thú cưng B', gia: '350,000', image: '../image/gioithieu2.png',loai:'chó' },
-      { id: 3, tenSp: 'Thức ăn cho thú cưng C', gia: '400,000', image: '../image/gioithieu2.png',loai:'chó' },
-      { id: 4, tenSp: 'Thức ăn cho thú cưng D', gia: '450,000', image: '../image/gioithieu2.png',loai:'chó' },
-      { id: 5, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: '300,000', image: '../image/gioithieu2.png',loai:'chó' },
-      { id: 6, tenSp: 'Thức ăn cho thú cưng B', gia: '350,000', image: '../image/gioithieu2.png' },
-      { id: 7, tenSp: 'Thức ăn cho thú cưng C', gia: '400,000', image: '../image/gioithieu2.png' },
-      { id: 8, tenSp: 'Thức ăn cho thú cưng D', gia: '450,000', image: '../image/gioithieu2.png' },
-      { id: 9, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: '300,000', image: '../image/gioithieu2.png' },
-      { id: 10, tenSp: 'Thức ăn cho thú cưng B', gia: '350,000', image: '../image/gioithieu2.png' },
-      { id: 11, tenSp: 'Thức ăn cho thú cưng C', gia: '400,000', image: '../image/gioithieu2.png' },
-      { id: 12, tenSp: 'Thức ăn cho thú cưng D', gia: '450,000', image: '../image/gioithieu2.png' },
-      { id: 13, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: '300,000', image: '../image/gioithieu2.png' },
-      { id: 14, tenSp: 'Thức ăn cho thú cưng B', gia: '350,000', image: '../image/gioithieu2.png' },
-      { id: 15, tenSp: 'Thức ăn cho thú cưng C', gia: '400,000', image: '../image/gioithieu2.png' },
-      { id: 16, tenSp: 'Thức ăn cho thú cưng D', gia: '450,000', image: '../image/gioithieu2.png' },
+    // Danh sách sản phẩm dữ liệu mẫu
+   const products = [
+  { id: 1, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: 300000, image: '../image/gioithieu2.png', loai: 'chó' },
+  { id: 2, tenSp: 'Thức ăn cho thú cưng B', gia: 350000, image: '../image/gioithieu2.png', loai: 'chó' },
+  { id: 3, tenSp: 'Thức ăn cho thú cưng C', gia: 400000, image: '../image/gioithieu2.png', loai: 'chó' },
+  { id: 4, tenSp: 'Thức ăn cho thú cưng D', gia: 450000, image: '../image/gioithieu2.png', loai: 'chó' },
+  { id: 5, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: 300000, image: '../image/gioithieu2.png', loai: 'chó' },
+  { id: 6, tenSp: 'Thức ăn cho thú cưng B', gia: 350000, image: '../image/gioithieu2.png' },
+  { id: 7, tenSp: 'Thức ăn cho thú cưng C', gia: 400000, image: '../image/gioithieu2.png' },
+  { id: 8, tenSp: 'Thức ăn cho thú cưng D', gia: 450000, image: '../image/gioithieu2.png' },
+  { id: 9, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: 300000, image: '../image/gioithieu2.png' },
+  { id: 10, tenSp: 'Thức ăn cho thú cưng B', gia: 350000, image: '../image/gioithieu2.png' },
+  { id: 11, tenSp: 'Thức ăn cho thú cưng C', gia: 400000, image: '../image/gioithieu2.png' },
+  { id: 12, tenSp: 'Thức ăn cho thú cưng D', gia: 450000, image: '../image/gioithieu2.png' },
+  { id: 13, tenSp: 'Royal Canin Maxi Puppy - Thức Ăn Cao Cấp Dành Cho Chó', gia: 300000, image: '../image/gioithieu2.png' },
+  { id: 14, tenSp: 'Thức ăn cho thú cưng đc', gia: 350000, image: '../image/gioithieu2.png' },
+  { id: 15, tenSp: 'Thức ăn cho thú cưng 111', gia: 400000, image: '../image/gioithieu2.png' },
+  { id: 16, tenSp: 'Thức ăn cho thú cưng G', gia: 450000, image: '../image/gioithieu2.png' },
+];
 
-    ];
 
     // Hàm mở popup với sản phẩm được chọn
     const openPopup = (product) => {
@@ -60,26 +65,28 @@
     };
 
     const [filterType, setFilterType] = useState('');  // Bộ lọc theo loại chó/mèo
-    const [filterPrice, setFilterPrice] = useState(''); // Bộ lọc theo giá
-    const filteredProducts = products.filter((product) => {
-      // Lọc theo loại
-      if (filterType === 'cho' && !product.tenSp.toLowerCase().includes('chó')) {
+const [filterPrice, setFilterPrice] = useState(''); // Bộ lọc theo giá
+
+const filteredProducts = products.filter((product) => {
+    // Chuyển đổi giá trị của product.gia thành số
+    const giaNum = product.gia; // Giả sử gia đã là số
+
+    // Lọc theo loại chó/mèo
+    if (filterType === 'cho' && !product.tenSp.toLowerCase().includes('chó')) {
         return false;
-      }
-      if (filterType === 'meo' && !product.tenSp.toLowerCase().includes('mèo')) {
+    }
+    if (filterType === 'meo' && !product.tenSp.toLowerCase().includes('mèo')) {
         return false;
-      }
-    
-      // Lọc theo giá
-      const giaNum = parseInt(product.gia.replace(/,/g, ''));
-      if (filterPrice === '300000' && giaNum >= 300000) return false;
-      if (filterPrice === '300000-400000' && (giaNum < 300000 || giaNum > 400000)) return false;
-      if (filterPrice === '400000' && giaNum <= 400000) return false;
-    
-  
-    
-      return true;
-    });
+    }
+
+    // Lọc theo giá
+    if (filterPrice === '300000' && giaNum >= 300000) return false; // Chỉ hiển thị sản phẩm có giá nhỏ hơn 300000
+    if (filterPrice === '300000-400000' && (giaNum < 300000 || giaNum > 400000)) return false; // Hiển thị sản phẩm trong khoảng 300000 - 400000
+    if (filterPrice === '400000' && giaNum <= 400000) return false; // Chỉ hiển thị sản phẩm có giá lớn hơn 400000
+
+    return true;
+});
+
     
     
 

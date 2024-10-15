@@ -1,7 +1,7 @@
 // Trangchu.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../src/Trangchu.module.css';
+import styles from './Header.module.css';
 
 function Trangchu() {
   return (

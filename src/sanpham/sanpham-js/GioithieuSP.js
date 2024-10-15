@@ -1,6 +1,6 @@
-import styles from './GioithieuSP.module.css';
+import styles from '../sanpham-css/GioithieuSP.module.css';
 
-import './GioithieuSP.module.css';
+
 function GioithieuSP(){
 return(
 <div >

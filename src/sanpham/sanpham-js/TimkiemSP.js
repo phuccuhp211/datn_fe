@@ -1,6 +1,6 @@
-import styles from './TimkiemSP.module.css';
+import styles from '../sanpham-css/TimkiemSP.module.css';
 
-import './TimkiemSP.module.css';
+
 function TimkiemSP(){
 return(
 <div className={styles.bao}>

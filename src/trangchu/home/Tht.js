@@ -1,6 +1,7 @@
-import styles from './Tht.module.css';
+// phan tim hieu them o trang chu
+import styles from '../home-css/Tht.module.css';
 
-import './Tht.module.css';
+import '../home-css/Tht.module.css';
 function Tht(){
 return(
 <div className={styles.columCard}>

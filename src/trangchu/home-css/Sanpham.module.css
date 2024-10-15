@@ -48,6 +48,8 @@ border: 1.5px solid gainsboro;
     color: rgb(183, 37, 37);
     font-weight: bold;
 }
+
+
 .sanPhamTT hr{
     width: 100px;
     height: 2px;
@@ -107,7 +109,10 @@ border: 1.5px solid gainsboro;
     opacity: 1;
     transform: translateY(0);
 }
-
+.card:hover p  {
+    opacity: 0;
+   
+}
 /* Popup overlay */
 .popupOverlay {
     position: fixed;
@@ -178,3 +183,5 @@ margin-left: 30px;
    }
 
   
+
+
