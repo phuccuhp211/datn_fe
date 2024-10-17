@@ -6,32 +6,32 @@ return(
 
 <div className={styles.footers}>
 {<div style={{clear:'both'}}></div>}
-   <div className={styles.noiDung1}>
-   <div className={styles.tiemPhong}>
-        <div className={styles.TTTiemPhong}>
+   <div className={styles.content_one}>
+   <div className={styles.vaccin}>
+        <div className={styles.informationVaccin}>
             BAN DANG MUON TIEM PHONG THU NUOI ?
         </div>
-        <div className={styles.btnTiemPhong}>
+        <div className={styles.btnVaccin}>
             <button>DAT LICH NGAY</button>
         </div>
     </div>
    </div>
 
 
-    <div className={styles.thongTinLH}>
+    <div className={styles.informationContacts}>
         <div className={styles.tuongTac}>
             <div className={styles.hop}>...</div>
         </div>
-       <div className={styles.baoTT}>
-       <div className={styles.veChungToi}>
-        <p className={styles.nD}>Về chúng tôi</p>
+       <div className={styles.informationContact}>
+       <div className={styles.aboutUS}>
+        <p className={styles.textAboutUS_1}>Về chúng tôi</p>
                 <hr></hr>
-                <p className={styles.tT}>Nhóm trẻ tình nguyện viên Việt Nam và quốc tế, hoạt động vì tình yêu chó mèo.</p>
-                <p className={styles.nD1}>Thông tin liên hệ</p>
+                <p className={styles.textAboutUS_3}>Nhóm trẻ tình nguyện viên Việt Nam và quốc tế, hoạt động vì tình yêu chó mèo.</p>
+                <p className={styles.textAboutUS_2}>Thông tin liên hệ</p>
                 <hr></hr>
-                <p className={styles.tT}>(+84) 39 320 1068</p>
-                <p className={styles.tT}>cuuhodongvat@gmail.com</p>
-                <p className={styles.tT}>Ho Chi Minh - Viet Nam</p>
+                <p className={styles.textAboutUS_3}>(+84) 39 320 1068</p>
+                <p className={styles.textAboutUS_3}>cuuhodongvat@gmail.com</p>
+                <p className={styles.textAboutUS_3}>Ho Chi Minh - Viet Nam</p>
         </div>
        </div>
         <div className={styles.fanPage}>

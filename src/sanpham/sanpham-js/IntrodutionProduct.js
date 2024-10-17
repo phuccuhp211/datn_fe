@@ -1,16 +1,15 @@
-import styles from '../sanpham-css/GioithieuSP.module.css';
+import styles from '../sanpham-css/Products.module.css';
 
-
-function GioithieuSP(){
+function IntrodutionProduct(){
 return(
 <div >
-<div className={styles.duongDan}>
+<div className={styles.linkWeb}>
     <div className={styles.link}>
         <a href='/'>Trang chu </a> -- <a href='/sanpham'>San pham</a>
     </div>
     </div>
-<div className={styles.gioithieuSP}>
-<div className={styles.ttSP}>
+<div className={styles.introductionProduct}>
+<div className={styles.informationProduct}>
         <h1>Sản phẩm thú nuôi </h1>
         <hr></hr>
         <p>
@@ -23,9 +22,9 @@ Với sứ mệnh mang lại sự an toàn và dinh dưỡng tốt nhất cho th
  giới thiệu dòng sản phẩm thức ăn được thiết kế để cung cấp tất cả các dưỡng chất thiết
   yếu, đảm bảo thú cưng của bạn luôn mạnh khỏe và hạnh phúc.
         </p>
-        <div className={styles.btnSP}><button>Dich vu tiem phong</button></div>
+        <div className={styles.btnVaccin}><button>Dich vu tiem phong</button></div>
     </div>
-    <div className={styles.anhGT}>
+    <div className={styles.imgIntroduction}>
         <img src='../image/gioithieu2.png'></img>
     </div>
 </div>
@@ -34,4 +33,4 @@ Với sứ mệnh mang lại sự an toàn và dinh dưỡng tốt nhất cho th
 );
 
 }
-export default GioithieuSP;
+export default IntrodutionProduct;

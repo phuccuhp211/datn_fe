@@ -1,12 +1,8 @@
   // show san pham o trang chu
-  import styles from '../home-css/Sanpham.module.css';
-
+  import styles from '../home-css/Home.module.css';
   import React , { useState ,useEffect} from 'react';
   import { Link ,useNavigate } from 'react-router-dom';
-  import '../home-css/Sanpham.module.css';
-
-
-  function Sanpham() {
+  function Product() {
  // Component cho popup
   function Popup({ product, isOpen, onClose }) {
     if (!isOpen) return null;
@@ -18,7 +14,7 @@
           <h2>{product.tenSp}</h2>
           <img src={product.image} alt={product.tenSp} style={{ width: '200px' }} />
           <p><strong>Giá:</strong> {product.gia} VND</p>
-          <button className={styles.muahang} onClick={() => addToCart(product)}>Thêm vào giỏ</button>
+          <button className={styles.buyProductPopup} onClick={() => addToCart(product)}>Thêm vào giỏ</button>
         </div>
       </div>
     );
@@ -125,11 +121,11 @@ const filteredProducts = products.filter((product) => {
 
 
     return (
-      <div className={styles.sanPham}>
+      <div className={styles.product}>
         <h1>SAN PHAM</h1>
 
         <div >
-      <div className={styles.loc1}>
+      <div className={styles.filterAnimal}>
       <select onChange={(e) => setFilterType(e.target.value)}>
     <option value="">Chọn sản phẩm</option>
     <option value="cho">Chó</option>
@@ -137,7 +133,7 @@ const filteredProducts = products.filter((product) => {
   </select>
       </div>
 
-<div className={styles.loc2}>
+<div className={styles.filterPrice}>
 <select onChange={(e) => setFilterPrice(e.target.value)}>
     <option value="">Chọn giá </option>
     <option value="300000">Dưới 300,000 VND</option>
@@ -150,25 +146,25 @@ const filteredProducts = products.filter((product) => {
 <div style={{clear:'both'}}></div>
 
 
-<div className={styles.columCard}>
+<div className={styles.columCardProduct}>
   {filteredProducts.map((product) => (
-    <div className={styles.card} key={product.id}>
-      <div className={styles.imageSP}>
+    <div className={styles.cardProduct} key={product.id}>
+      <div className={styles.imgProduct}>
         {/* Sử dụng <Link> để dẫn đến trang chi tiết sản phẩm */}
         <Link to={`/product/${product.id}`}>
           <img src={product.image} alt={product.tenSp} />
         </Link>
       </div>
-      <div className={styles.sanPhamTT}>
-      <div className={styles.tenSP}>
+      <div className={styles.informationProduct}>
+      <div className={styles.nameProduct}>
           {/* Thêm <Link> cho tên sản phẩm */}
-          <Link to={`/product/${product.id}`}  className={styles.ttSP}>{product.tenSp}</Link>
+          <Link to={`/product/${product.id}`}  className={styles.linkProduct}>{product.tenSp}</Link>
       </div>
         <hr />
-        <div className={styles.muaNgay}>
-          <p className={styles.gia}>{product.gia} VND</p>
-          <div className={styles.overSP}>
-            <button className={styles.muaHang} onClick={() => openPopup(product)}>Mua hàng</button>
+        <div className={styles.buyNowProduct}>
+          <p className={styles.priceProduct}>{product.gia} VND</p>
+          <div className={styles.overProduct}>
+            <button className={styles.buyProduct} onClick={() => openPopup(product)}>Mua hàng</button>
           </div>
         </div>
       </div>
@@ -178,7 +174,7 @@ const filteredProducts = products.filter((product) => {
 
 
         {/* Nút Xem thêm */}
-        <div className={styles.btnSP}><button>XEM THEM</button></div>
+        <div className={styles.btnSeeMoreProduct}><button>XEM THEM</button></div>
 
         {/* Hiển thị popup nếu isPopupOpen là true */}
         {selectedProduct && (
@@ -188,4 +184,4 @@ const filteredProducts = products.filter((product) => {
     );
   }
 
-  export default Sanpham;
+  export default Product;

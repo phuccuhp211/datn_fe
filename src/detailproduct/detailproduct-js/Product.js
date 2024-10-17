@@ -1,9 +1,9 @@
 import React , { useState ,useEffect} from 'react';
 
 import { useParams ,useNavigate } from 'react-router-dom';
-import styles from '../detailproduct-css/Products.module.css';
-import Mota from './Mota';
-import Productkhac from './Product-khac';
+import styles from '../detailproduct-css/detailProduct.module.css';
+import Describe from './Describe';
+import ProductOther from './ProductOther';
 
 
  function Product () {
@@ -101,15 +101,15 @@ const previousImage = () => {
 
   return (
     <div >
-    <div className={styles.duongDan}>
+    <div className={styles.linkWeb}>
     <div className={styles.link}>
         <a href='/'>Trang chu </a> -- <a href='/sanpham'>San pham</a>
     </div>
     </div>
-      <div className={styles.bocChitiet}>
+      <div className={styles.detailProducts}>
             {/* Hình ảnh nhỏ bên trái */}
-           <div className={styles.bocanh}>
-           <div className={styles.anhPhu}>
+           <div className={styles.images}>
+           <div className={styles.imgSub}>
                 <div className={styles.arrows}>
                     <button onClick={previousImage}>&#9650;</button> {/* Mũi tên lên */}
                 </div>
@@ -137,13 +137,13 @@ const previousImage = () => {
             </div>
             
             {/* Chi tiết sản phẩm */}
-           <div className={styles.baottChiTiet}>
-           <div className={styles.ttChiTiet}>
+           <div className={styles.detailProduct}>
+           <div className={styles.informationDetail}>
                 <h1>{product.tenSp}</h1>
-                <p className={styles.thuongHieu}>Thương hiệu: ROYAL CANIN | Tình trạng: Còn hàng</p>
-                <div className={styles.baoGia}>
-                <p className={styles.giaCu}>{product.gia} VND  </p>
-                <p className={styles.giaMoi}>|99.000 VND</p>
+                <p className={styles.trademark}>Thương hiệu: ROYAL CANIN | Tình trạng: Còn hàng</p>
+                <div className={styles.price}>
+                <p className={styles.oldPrice}>{product.gia} VND  </p>
+                <p className={styles.newPrice}>|99.000 VND</p>
                 </div>
                 <h4>LOAI : <span>{selectedType}</span></h4>
                 <div className={styles.options}>
@@ -155,7 +155,7 @@ const previousImage = () => {
 
                 
                 </div>
-               <div className={styles.soLuong}> <label >CHỌN SỐ LƯỢNG : </label></div>
+               <div className={styles.quantitys}> <label >CHỌN SỐ LƯỢNG : </label></div>
                 <div className={styles.quantity}>
                 <input
                 type="number"
@@ -174,8 +174,8 @@ const previousImage = () => {
 
          
         </div>
-        <Mota/>
-        <Productkhac/>
+        <Describe/>
+        <ProductOther/>
     </div>
   );
 };

@@ -1,8 +1,8 @@
-.noiDung1{   
+.content_one{   
     background-image: url("../../public/image/thongke.png");
     background-size: cover;
 }
-.tiemPhong{
+.vaccin{
    padding: 40px 0px 40px 0px;
     width: 1140px;
     margin: auto;
@@ -10,13 +10,13 @@
     justify-content: space-between;
     
 }
-.TTTiemPhong{
+.informationVaccin{
     font-size: 28px;
     color: white;
     line-height: 60px;
     
 }
-.btnTiemPhong button{
+.btnVaccin button{
     font-size: 22px;
     width: 255px;
     height: 60px;
@@ -27,7 +27,7 @@
     font-weight: 100;
 }
 
-.thongTinLH{
+.informationContacts{
     margin: auto;
     width: 1140px;
    margin-top: 50px;
@@ -38,11 +38,11 @@ width: 260px;
 height: 140px;
 float: left;
 }
-.baoTT{
+.informationContact{
 width: 530px;
 float: left;
 }
-.veChungToi{
+.aboutUS{
 margin: 0px 10px 0px 10px;
 }
 .fanPage{
@@ -51,20 +51,20 @@ width: 350px;
 height: 175px;
 float: left;
 }
-.nD{
+.textAboutUS_1{
     font-size: 27px;
     
 }
-.nD1{
+.textAboutUS_2{
     font-size: 27px;
    margin-top: 20px;
 }
-.tT{
+.textAboutUS_3{
     margin-top: 10px;
     font-size: 18px;
     line-height: 25px;
 }
-.veChungToi hr{
+.textAboutUS_1 hr{
     width: 100px;
    color: black;
    background-color: black;

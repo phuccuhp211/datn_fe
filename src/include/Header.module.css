@@ -10,26 +10,26 @@
     z-index: 999;
     
 }
-.mauLienHe{
+.colorContact{
     background-color: #334B75;
 }
-.thanhLienHe{
+.Contact{
     margin: auto;
     height: 40px;
     width: 1140px   ;
   
 }
-.thongTinLienHe{ 
+.informationContact{ 
     float: left;
 }
-.thongTinLienHe p{
+.informationContact p{
    line-height: 40px;
     float: left;
     font-size: 16px;
     color: white;
     padding-left: 20px;
 }
-.dangNhap{
+.login{
     float: right;
     line-height: 40px;
     color: white;
@@ -41,17 +41,17 @@
     margin: auto;
    
 }
-.cuon{
+.header{
    border-bottom: 1px solid rgb(183, 183, 183);
     background-color: white;
     height: 77px;
 }
 
-.chinhMenu ul {
+.editMenu ul {
     list-style: none;
 }
 
-.chinhMenu ul li a{
+.editMenu ul li a{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -61,7 +61,7 @@
     float: left;
     padding-left: 25px;
 }
-.chuMenu{
+.textMenu{
     line-height: 70px;
     font-weight: bold;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import styles from './giohang.module.css';
+import styles from './Cart.module.css';
 
-function Giohang() {
+function Cart() {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || []);
 
   // Hàm xử lý khi cập nhật số lượng sản phẩm
@@ -41,7 +41,7 @@ return acc + (Number(item.gia) * Number(item.quantity));
       <div className={styles.cartContainer}>
         <h1>Giỏ hàng của bạn</h1>
         <table>
-          <thead  className={styles.theadGH}>
+          <thead  className={styles.theadCard}>
             <tr className={styles.chude}>
               <th scope="col">ẢNH SẢN PHẨM</th>
               <th scope="col">TÊN SẢN PHẨM</th>
@@ -51,7 +51,7 @@ return acc + (Number(item.gia) * Number(item.quantity));
               <th scope="col">XÓA</th>
             </tr>
           </thead>
-          <tbody className={styles.spGioHang}>
+          <tbody className={styles.cartProduct}>
             {cart.length === 0 ? (
               <tr>
                 <td colSpan="6">Giỏ hàng của bạn trống.</td>
@@ -59,15 +59,15 @@ return acc + (Number(item.gia) * Number(item.quantity));
             ) : (
               cart.map((item) => (
                 <tr key={item.id}>
-                  <td className={styles.tensp}>
+                  <td className={styles.Product}>
                     <img src='../image/gioithieu2.png' alt="Sản phẩm" />
                   </td>
-                  <td className={styles.tenspp}>
+                  <td className={styles.nameProduct}>
                     {item.tenSp} - {item.selectedType}
                   </td>
-                  <td className={styles.tensp}>{Number(item.gia).toLocaleString()} VND</td>
+                  <td className={styles.Product}>{Number(item.gia).toLocaleString()} VND</td>
                   <td>
-                    <div className={styles.tensp1}>
+                    <div className={styles.quantityProduct}>
                       <input
                         type="number"
                         name="quantity"
@@ -79,13 +79,13 @@ return acc + (Number(item.gia) * Number(item.quantity));
                       />
                     </div>
                   </td>
-                  <td className={styles.tensp}>
+                  <td className={styles.Product}>
                     {(Number(item.gia) * Number(item.quantity)).toLocaleString()} VND
                     
                   </td>
-                  <td className={styles.tensp}>
+                  <td className={styles.Product}>
                     <button
-                      className={styles.xoa}
+                      className={styles.delete}
                       onClick={() => handleRemove(item.id)}
                     >
                       Xóa
@@ -97,10 +97,10 @@ return acc + (Number(item.gia) * Number(item.quantity));
           </tbody>
         </table>
 
-    <button className={styles.ttMua}>Tiep tuc mua hang</button>
-   <div className={styles.tbThanhToan}>
+    <button className={styles.continueBuy}>Tiep tuc mua hang</button>
+   <div className={styles.sumPrices}>
    <table >
-       <thead className={styles.tongTien}>
+       <thead className={styles.sumPrice}>
        <tr>
             <th>Tong tien </th>
         </tr>
@@ -114,7 +114,7 @@ return acc + (Number(item.gia) * Number(item.quantity));
         )}</td></tr>
         </tbody>
     </table>
-<button className={styles.thanhToan}>THANH TOAN DON HANG </button>
+<button className={styles.payment}>THANH TOAN DON HANG </button>
    </div>
       {/* Hiển thị ra bảng tổng tiền */}
      
@@ -123,4 +123,4 @@ return acc + (Number(item.gia) * Number(item.quantity));
   );
 }
 
-export default Giohang;
+export default Cart;

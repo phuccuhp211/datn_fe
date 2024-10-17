@@ -1,7 +1,7 @@
-import styles from '../detailproduct-css/Product-khac.module.css';
+import styles from '../detailproduct-css/detailProduct.module.css';
 
 import { Link } from 'react-router-dom';
-function Productkhac(){
+function ProductOther(){
      
       // Danh sách sản phẩm dữ liệu mẫu
       const products = [
@@ -31,30 +31,30 @@ function Productkhac(){
   
   
 return(
-<div className={styles.bocSP}>
-<div className={styles.sanPham}>
+<div className={styles.otherProducts}>
+<div className={styles.otherProduct}>
     <h1>San pham khac </h1>
     <hr></hr>
 
-<div className={styles.columCard}>
+<div className={styles.columCardOtherProduct}>
 {products.map((product) => (
-<div className={styles.card} key={product.id}>
-  <div className={styles.imageSP}>
+<div className={styles.cardOtherProduct} key={product.id}>
+  <div className={styles.imgOtherProduct}>
     {/* Sử dụng <Link> để dẫn đến trang chi tiết sản phẩm */}
     <Link to={`/product/${product.id}`}>
       <img src={product.image} alt={product.tenSp} />
     </Link>
   </div>
-  <div className={styles.sanPhamTT}>
-  <div className={styles.tenSP}>
+  <div className={styles.informationOtherProducts}>
+  <div className={styles.nameOtherProduct}>
       {/* Thêm <Link> cho tên sản phẩm */}
-      <Link to={`/product/${product.id}`}  className={styles.ttSP}>{product.tenSp}</Link>
+      <Link to={`/product/${product.id}`}  className={styles.informationOtherProduct}>{product.tenSp}</Link>
   </div>
     <hr />
-    <div className={styles.muaNgay}>
-      <p className={styles.gia}>{product.gia} VND</p>
-      <div className={styles.overSP}>
-        <button className={styles.muaHang} >Mua hàng</button>
+    <div className={styles.buyNowOtherProduct}>
+      <p className={styles.priceOtherProduct}>{product.gia} VND</p>
+      <div className={styles.overOtherProduct}>
+        <button className={styles.buyOtherProduct} >Mua hàng</button>
       </div>
     </div>
   </div>
@@ -67,4 +67,4 @@ return(
 );
 
 }
-export default Productkhac;
+export default ProductOther;
