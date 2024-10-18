@@ -8,10 +8,11 @@ import './App.css';
 import Cuontrang from './Cuontrang'; // Nhập component bạn vừa tạo
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
     <Cuontrang/>
-    <Headers/>
-    <AppRouter />
+    {/* <Headers/> */}
+   <AppRouter>
+   </AppRouter>
     <Footers/>
   </BrowserRouter>
   );

@@ -3,7 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
-function Trangchu() {
+function Trangchu({ user , setUser}) {
+  const handleLogout = () => {
+    setUser(null); // Đặt user về null khi đăng xuất
+  };
   return (
     <div className={styles.container}>
       <div >
@@ -14,7 +17,15 @@ function Trangchu() {
               <p>0334857779</p>
               <p>hochiminh - viet nam</p>
             </div>
-            <div className={styles.login}>Đăng nhập</div>
+
+           <div className={styles.login}>
+           {user ? (
+                 <p  onClick={handleLogout}> Chào, {user.name}!</p> 
+          ) : (
+           <Link to="/login" >Dang nhap</Link>
+          )}
+
+           </div>
           </div>
         </div>
 
