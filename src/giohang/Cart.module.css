@@ -1,138 +1,198 @@
-.cartContainer {
-    margin: 0 auto;
-    max-width: 1140px;
+
+
+  .formPay {
+    display: flex;
+    justify-content: space-between;
+   
+   
+  }
   
-}
-
-.cartContainer h1 {
-margin: 20px 0;
-    color: #333;
-    font-size: 2rem;
-}
-
-table {
-    width: 100%;
-   border: 0.5px solid  #333;
+  .formN{
+    width: 1140px;
+    margin: 10px  auto;
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .formSection {
+    width: 65%;
+    margin-right: 20px;
+    max-height: 400px; /* Giới hạn chiều cao khu vực chứa sản phẩm */
+    overflow-y: auto;  /* Hiển thị thanh cuộn khi có nhiều sản phẩm */
+  } 
+  
+  .summarySection {
+   width: 35%;
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .formPay h1, h2 {
     margin-bottom: 10px;
-}
+  }
+  
+  .formPay p {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .thongtin input[type="email"],
+  .thongtin input[type="text"] {
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .summarySection input[type="text"]{
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .thanhtoan{
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  
+  .orderTotals p, .order-totals h3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  
+  }
+  
+  .orderTotals h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
 
-.theadCard th {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    font-weight: lighter;
-    text-transform: uppercase;
-}
-
-.cartProduct tr {
-    background-color: #ffffff;
-    border-bottom: 1px solid #000000;
-}
-
-.cartProduct tr td{
-    padding: 0px 10px;
-}
-.cartProduct tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.Product {
-  padding: 5px 0px;
-    text-align: center;
-    color: #333;
-    text-transform: uppercase;
-    
-}
-.nameProduct{
-    
-    padding: 0px 20px;
-    color: #333;
-    text-transform: uppercase;
-}
-
-
-.quantityProduct {
+  
+  .formPay label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .thongtin select {
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .order{
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
     margin: 10px 0px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;  
+    align-items: center;
+  }
+  
+  
+  .orderTotals hr{
+  margin-bottom: 10px;
+  }
+  
+  .method {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px 15px 5px 15px;
+    margin-bottom: 5px;
+    background-color: #fdfdfd;
+                 /* Cả hai phương thức có cùng chiều rộng */
+    position: relative;
+  }
+  
+  
+  
+   .paymentMethod input[type="radio"] {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+  }
+  
+  .paymentMethod label {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-
-
-.Product img {
-    margin: 10px 0px;
-    width: 100px;
-    height:100px;
-    object-fit: cover;
-    
-}
-
-input[type="number"] {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
-    margin-right: 10px;
-}
-
-
-
-
-.delete {
-    background-color: #dc3545;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
+    padding-left: 30px;
     cursor: pointer;
-    font-size: 0.9rem;
-}
-
-.delete:hover {
-    background-color: #c82333;
-}
-.continueBuy{
-width: 230px;
-height: 40px;
-font-size: 16px;
-text-transform: uppercase;
-border: none;
-
-}
-.continueBuy:hover{
-    background-color: #007bff;
-
-}
-.sumPrices{
- width: 350px;
-float: right;
-margin-bottom: 50px;
-}
-.sumPrice th{
-    background-color: #18497e;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-.sumPrices p {
-    overflow: hidden;
-   padding:5px 0px;
-    text-align: center;   
-    font-size: 20px;
-    font-weight: bold;
-}
-.payment{
-    width: 350px;
-    height: 50px;
+  }
+  
+  .methodTitle {
     font-size: 16px;
-    background-color: rgb(248, 61, 61);
-    color: white;
-    font-weight: 550;
-    border : none;
-}
-.payment:hover{
+    font-weight: bold;
+  }
+
+
+  
+  .thongtin{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    
+  }
+  
+  
+  
+  
+  .quantityInput {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+   .delete {
+    padding: 5px 15px;
+    border: none;
     background-color: #007bff;
-}
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete:hover {
+    background-color: #0056b3;
+  }
+  .thanhtoan{
+    background-color: #007bff;
+    color: white;
+  }
+  .thanhtoan:hover{
+    background-color: #0056b3;
+  }
+  
+  
+  .item{
+    text-align: center;
+  }
+  
+  .order img{
+    width: 80px;
+    height: 80px;
+  }
