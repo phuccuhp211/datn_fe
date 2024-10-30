@@ -144,7 +144,9 @@ function Product() {
               </div>
               <hr />
               <div className={styles.buyNowProduct}>
-                <p className={styles.priceProduct}>{product.sizes.length > 0 ? product.sizes[0]?.price : 'Liên hệ'} VND</p>
+              <p className={styles.priceProduct}>
+  {product.sizes && product.sizes.length > 0 ? product.sizes[0].price : 'Liên hệ'} VND
+      </p>
                 <div className={styles.overProduct}>
                   <button className={styles.buyProduct} onClick={() => openPopup(product)}>Mua hàng</button>
                 </div>
