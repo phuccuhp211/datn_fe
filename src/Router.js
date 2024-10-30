@@ -8,13 +8,6 @@ import Product from './detailproduct/detailproduct-js/Product';
 import Giohang from './giohang/Cart';
 import Login from './login/Login';
 import Register from './login/Register';
-import Support from './ungho/Support';
-import Contact from './lienhe/Contact';
-import Volunteer from './tinhnguyen/Volunteer';
-import New from './tintuc/New';
-import DetailNew from './tintuc/DetailNew';
-import FormVolunteer from './tinhnguyen/FormVolunteer';
-import Vaccin from './tiemphong/Vaccin';
 
 
 function AppRouter() {
@@ -29,13 +22,6 @@ function AppRouter() {
       <Route path="/giohang" element={<Giohang />} />
       <Route path="/login" element={<Login setUser={setUser} />} />
       <Route path="/register" element={<Register  setUser={setUser}  />} />
-      <Route path="/ungho" element={<Support />} />
-      <Route path="/lienhe" element={<Contact />} />
-      <Route path="/tinhnguyen" element={<Volunteer />} />
-      <Route path="/tintuc" element={<New />} />
-      <Route path="/tintuc/:1" element={<DetailNew />} />
-      <Route path="/dangkytinhnguyen" element={<FormVolunteer />} />
-      <Route path="/vaccin" element={<Vaccin />} />
     </Routes>
     </>
   );

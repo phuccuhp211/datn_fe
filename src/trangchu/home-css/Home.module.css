@@ -1,0 +1,670 @@
+/* -------------------------------- DONG VAT ------------------------------------ */
+.backgroundAnimal {
+    background-color: #FAFAFA;
+    padding-top: 30px;
+    margin-top: 60px;
+    padding-bottom: 30px;
+}
+
+.backgroundAnimal h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+/* Container chứa các thẻ card */
+.columAnimal {
+    width: 1140px;
+    margin: auto;
+    display: grid;
+    /* Dùng Flexbox */
+    grid-template-columns: repeat(3, 1fr);
+    /* Chia thành 3 cột có kích thước đều nhau */
+    ;
+    gap: 30px;
+    /* Khoảng cách giữa các thẻ */
+    padding: 15px;
+}
+
+.imgAnimal img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid black
+}
+
+.imgAnimal img:hover {
+    opacity: 0.8;
+}
+
+
+.informationsAnimal {
+    width: 320px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    margin: -120px auto 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.135);
+    border: 2px solid gainsboro;
+}
+
+.informationsAnimal h2 {
+    font-size: 40px;
+    padding: 10px 0px;
+    margin-left: 20px;
+}
+
+.informationsAnimal hr {
+    margin: 0 20px;
+    height: 3px;
+    background-color: #000000;
+}
+
+
+
+.informationAnimal p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 20px;
+    color: black;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+
+}
+
+.informationAnimal:hover p {
+    opacity: 0;
+}
+
+.seeMoreAnimal {
+    text-align: center;
+    font-size: 24px
+}
+
+.informationAnimal .overlayAnimal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.informationAnimal {
+    margin-top: 10px;
+}
+
+.informationAnimal .showInformation {
+    margin-top: 50px;
+    font-size: 23px;
+    width: 230px;
+    height: 50px;
+    color: white;
+    background-color: #000000;
+    border-radius: 5px;
+    border: #000000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.informationAnimal:hover .showInformation {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.informationsAnimal:hover {
+    background-color: #5876a9;
+
+}
+
+
+
+/* -------------------------------- GIOI THIEU ------------------------------------ */
+
+.introduces {
+    width: 1140px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #5a97ffa1;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.introduce {
+    width: 1000px;
+    margin: auto;
+}
+
+.introduce_one {
+    width: 745px;
+    height: 150px;
+    background-color: #D9D9D9;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.introduce h2 {
+    font-size: 30px;
+    color: #DD3A3A;
+}
+
+.introduce p {
+    line-height: 25px;
+    font-size: 17px;
+    color: #DD3A3A;
+}
+
+.introduction_one {
+    width: 550px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.imgIntroduce_one img {
+    width: 140px;
+    height: 195px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.introduce_two {
+    margin-top: 20px;
+    height: 190px;
+}
+
+.imgIntroduce_two img {
+    width: 300px;
+    height: 185px;
+    border-radius: 300px;
+    float: left;
+}
+
+.introduction_two {
+    margin-top: 10px;
+    width: 680px;
+    float: right;
+
+}
+
+.introduce_three {
+    margin-top: 40px;
+    height: 190px;
+}
+
+.imgIntroduce_three img {
+    width: 300px;
+    height: 185px;
+    border-radius: 300px;
+    float: right;
+}
+
+.introduction_three {
+    margin-top: 10px;
+    width: 680px;
+    float: left;
+
+}
+
+.introduce_four {
+    margin-top: 40px;
+    height: 190px;
+}
+
+.imgIntroduce_four img {
+    width: 300px;
+    height: 185px;
+    border-radius: 300px;
+    float: left;
+}
+
+.introduction_four {
+    margin-top: 10px;
+    width: 680px;
+    float: right;
+
+}
+
+.btnIntroduce button {
+    padding: 15px 40px 15px 40px;
+    font-size: 19px;
+    border-radius: 50px;
+    background-color: #148EDA;
+    font-weight: bold;
+    border: #148EDA;
+    transition: 0.3s;
+}
+
+.btnIntroduce {
+    margin-top: 70px;
+    text-align: center;
+
+}
+
+.btnIntroduce button:hover {
+    background-color: #126ca4;
+}
+
+
+/* -------------------------------- SAN PHAM ------------------------------------ */
+
+.product {
+    padding-bottom: 30px;
+    width: 1140px;
+    margin: auto;
+
+}
+
+.product h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.columCardProduct {
+
+    display: grid;
+    /* Dùng Flexbox */
+    grid-template-columns: repeat(4, 1fr);
+    /* Chia thành 3 cột có kích thước đều nhau */
+    ;
+    gap: 30px;
+    /* Khoảng cách giữa các thẻ */
+    padding: 15px;
+}
+
+.cardProduct {
+    width: 255px;
+    height: 380px;
+    border: 1.5px solid gainsboro;
+}
+
+.imgProduct img {
+    width: 230px;
+    height: 230px;
+}
+
+.imgProduct {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nameProduct {
+
+    height: 60px;
+
+}
+
+.linkProduct {
+    font-size: 16px;
+    line-height: 18px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.priceProduct {
+    font-size: 28px;
+    color: rgb(183, 37, 37);
+    font-weight: bold;
+}
+
+
+.informationProduct hr {
+    width: 100px;
+    height: 2px;
+
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+.informationProduct {
+    padding: 0px 10px;
+
+}
+
+.btnSeeMoreProduct {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.btnSeeMoreProduct button {
+    font-size: 23px;
+    width: 230px;
+    height: 50px;
+    color: white;
+    background-color: #000000;
+    border-radius: 5px;
+    border: #000000;
+}
+
+.buyNowProduct {
+    position: relative;
+}
+
+.buyNowProduct .overProduct {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    text-align: center;
+
+}
+
+.buyNowProduct .buyProduct {
+
+    font-size: 20px;
+    width: 230px;
+    height: 45px;
+    color: white;
+    background-color: #000000;
+    border-radius: 10px;
+    border: #000000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.cardProduct:hover .buyProduct {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cardProduct:hover p {
+    opacity: 0;
+
+}
+
+/* Popup overlay */
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Nội dung popup */
+.popupContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+/* Nút đóng popup */
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Nút Mua hàng trong popup */
+.buyProductPopup {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filterAnimal select {
+    float: left;
+    margin-left: 30px;
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.filterPrice select {
+    float: right;
+    margin-right: 30px;
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+
+/* -------------------------------- THONG KE ------------------------------------ */
+
+.statistical {
+    background-image: url("../../../public/image/thongke.png");
+    background-size: cover;
+}
+
+.columStatistical {
+    width: 1140px;
+    margin: auto;
+    display: grid;
+    /* Dùng Flexbox */
+    grid-template-columns: repeat(4, 1fr);
+    /* Chia thành 3 cột có kích thước đều nhau */
+    ;
+    gap: 30px;
+    /* Khoảng cách giữa các thẻ */
+    padding: 40px 0;
+}
+
+.imgStatistical img {
+
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.cardStatistical {
+    text-align: center;
+}
+
+.informationStatistical h2 {
+    font-size: 32px;
+    line-height: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.informationStatistical p {
+
+    font-size: 25px;
+    color: white;
+}
+
+/* -------------------------------- TIM HIEU THEM  ------------------------------------ */
+/* Container chứa các thẻ card */
+.columLearnmore {
+
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    /* Dùng Flexbox */
+    justify-content: space-between;
+    /* Căn đều các thẻ card */
+    gap: 30px;
+    /* Khoảng cách giữa các thẻ */
+    padding: 15px;
+}
+
+
+.cardLearnmore {
+    background-color: #334B75;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 255px;
+    /* Chiều rộng của mỗi thẻ */
+    height: 285px;
+    text-align: center;
+    position: relative;
+    /* Để tạo không gian cho nền */
+    border: 2px solid transparent;
+    /* Viền mặc định trong suốt */
+    transition: border 0.3s;
+    /* Hiệu ứng khi di chuột qua thẻ */
+}
+
+.cardLearnmore:hover {
+    border: 2px solid #2c3e50;
+    /* Viền màu khi hover */
+
+}
+
+.imgLearnmore {
+    background-color: #ffffff;
+    margin: 25px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+
+
+.informationLearnmore h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.informationLearnmore p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+
+.btnLearnmore {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 19px;
+}
+
+.btnLearnmore:hover {
+    background-color: #1A252F;
+}
+
+.informationLearnmore {
+    width: 220px;
+    height: 265px;
+    background-color: #E6E6E6;
+    margin-bottom: 20px;
+    position: relative;
+    margin: -80px auto 20px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+/* -------------------------------- TIN TUC ------------------------------------ */
+.news {
+    border-bottom: 1px solid black;
+}
+
+.news h1 {
+    padding: 30px 0px 10px 0px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.columCardNews {
+    width: 1140px;
+    margin: auto;
+    display: grid;
+    /* Dùng Flexbox */
+    grid-template-columns: repeat(3, 1fr);
+    /* Chia thành 3 cột có kích thước đều nhau */
+    ;
+    gap: 30px;
+    /* Khoảng cách giữa các thẻ */
+    padding: 15px;
+}
+
+.cardNews {
+    width: 350px;
+    height: 490px;
+    border: 1.5px solid gainsboro;
+    border-radius: 5px;
+
+}
+
+.imgNews img {
+    margin-top: 2px;
+    width: 344px;
+    height: 290px;
+    border-radius: 5px 5px 0 0;
+}
+
+.imgNews {
+    text-align: center;
+}
+
+.titleNews {
+    font-size: 24px;
+
+    height: 75px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.informationNews {
+    margin: 0px 10px;
+}
+
+.informationNew {
+    margin-top: 10px;
+    color: #555555;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.btnNews {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btnNews button {
+    font-size: 18px;
+    width: 175px;
+    height: 50px;
+    background-color: #3B8CEB;
+    border: #3B8CEB;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.card p {
+    padding: 0px 10px;
+}

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from '../sanpham-css/Products.module.css';
 
 function IntrodutionProduct(){
@@ -8,7 +7,7 @@ return(
     <div className={styles.link}>
         <a href='/'>Trang chu </a> -- <a href='/sanpham'>San pham</a>
     </div>
-</div>
+    </div>
 <div className={styles.introductionProduct}>
 <div className={styles.informationProduct}>
         <h1>Sản phẩm thú nuôi </h1>
@@ -23,7 +22,7 @@ Với sứ mệnh mang lại sự an toàn và dinh dưỡng tốt nhất cho th
  giới thiệu dòng sản phẩm thức ăn được thiết kế để cung cấp tất cả các dưỡng chất thiết
   yếu, đảm bảo thú cưng của bạn luôn mạnh khỏe và hạnh phúc.
         </p>
-        <div className={styles.btnVaccin}><button><Link to="/vaccin">Dich vu tiem phong</Link></button></div>
+        <div className={styles.btnVaccin}><button>Dich vu tiem phong</button></div>
     </div>
     <div className={styles.imgIntroduction}>
         <img src='../image/gioithieu2.png'></img>

@@ -1,0 +1,294 @@
+.linkWeb{
+    background-color: #EBEBEB;
+    margin-bottom: 20px;
+}
+.link{
+    width: 1140px;
+    margin: auto;
+   height: 50px;
+   
+}
+.link a{
+    text-decoration: none;
+    color: black;  
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.detailProducts {
+    width: 1140px;
+     margin: auto;
+     padding: 15px;
+}
+.images{
+ width: 50%;
+ float: left;
+align-items: center;
+}
+.imgSub {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    
+}
+
+.imgSub img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    border: 0.5px solid black;
+}
+
+.imgSub img.active {
+    opacity: 1;
+}
+
+.mainImage{
+    float: right;
+    width: 450px;
+}
+.mainImage img {
+ width: 440px;
+ height: 445px;
+ box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.135);
+}
+
+.detailProduct {
+    width: 50%;
+    float: right;
+}
+.informationDetail{
+    margin-left: 10px;
+}
+
+.informationDetail h1 {
+    font-size: 22px;
+    line-height: 31px;
+    text-transform: uppercase;
+    height: 65px;
+}
+.informationDetail .trademark{
+    font-size: 14px;
+}
+
+.informationDetail .price {
+  margin: 20px 0px;
+   display: flex;
+   font-weight: bold;
+}
+
+.informationDetail .oldPrice {
+    text-decoration: line-through;
+    font-size: 28px;
+}
+
+.informationDetail .newPrice {
+    color: red;
+    font-size: 28px;
+}
+.options{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.options button {
+   width: 170px;
+   height: 40px;
+   font-size: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  
+}
+
+ h4{
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.quantitys{
+margin: 20px 0px 10px 0px;
+}
+.quantity input {
+    width: 115px;
+    height: 50px;
+    margin-right: 10px;
+    padding-left: 10PX;
+    font-size: 18px;
+    color: #6E6E6E;
+    border-radius: 5px;
+
+}
+
+.addToCartBtn {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.imgSub .arrows {
+text-align: center;
+}
+
+.arrows button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+   
+ 
+}
+
+/* -------------------- SAN PHAN KHAC --------------------------- */
+
+.otherProducts{
+    border: 2px solid rgb(135, 135, 131);
+    margin-top: 50px;
+}
+.otherProduct{
+    padding-bottom: 30px;
+    width: 1140px;
+    margin: auto;
+   
+}
+
+.otherProduct h1{
+ 
+    margin-top: 20px;
+}
+.otherProduct hr{
+    width: 200px;
+    height: 5px;
+    background-color: #000000;
+}
+.columCardOtherProduct {
+   
+    display: grid; /* Dùng Flexbox */
+    grid-template-columns:  repeat(4, 1fr); /* Chia thành 3 cột có kích thước đều nhau */; 
+      gap: 30px; /* Khoảng cách giữa các thẻ */
+      padding: 15px;
+    }
+.cardOtherProduct{
+width: 255px;
+height: 380px;
+border: 1.5px solid gainsboro;
+}
+
+.imgOtherProduct img{
+    width: 230px;
+    height: 230px;
+}
+.imgOtherProduct {
+    text-align: center;
+    margin-top: 10px;
+}
+.nameOtherProduct{
+   
+   height: 60px;
+  
+}
+.informationOtherProduct{
+    font-size: 16px;
+    line-height: 18px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase ;
+}
+.priceOtherProduct{
+    font-size: 28px;
+    color: rgb(183, 37, 37);
+    font-weight: bold;
+}
+.informationOtherProducts hr{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+.informationOtherProducts{
+    padding: 0px 10px;
+  
+}
+
+
+
+.buyNowOtherProduct{
+    position: relative;
+}
+.buyNowOtherProduct .overOtherProduct {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    
+}
+.buyNowOtherProduct .buyOtherProduct{
+  
+    font-size: 20px;
+    width: 230px;
+    height: 45px;
+    color: white;
+    background-color: #000000;
+    border-radius: 10px;
+    border: #000000;
+   opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.cardOtherProduct:hover .buyOtherProduct  {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  /* ------------------------- MO TA ------------------------------ */
+  .describes{
+    width: 1140px;
+    margin: auto; 
+}
+.boxDescribes{
+    width: 140px;
+    height: 65px;
+    font-size: 18px;
+    background-color: #777575;
+   
+}
+.boxDescribes p{
+    line-height: 65px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.boxDescribe{
+    border: 1px solid #CBCBCB;
+    border-radius:  0px 10px 10px 10px;
+    padding-bottom: 30px;
+}
+.informationDescribe{
+    margin: 25px;
+    line-height: 25px;
+}
+.describes{
+    margin-top: 150px;
+}
+.textDescribes{
+    font-weight: bold;
+}
+.rowDescribes{
+    margin-bottom: 20px;
+}
