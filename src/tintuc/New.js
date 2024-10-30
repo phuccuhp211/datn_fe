@@ -13,7 +13,7 @@ const New = () => {
         <div className={styles.boxNew}>
        <div className={styles.spaceNew}>
        <div className={styles.category}>
-            <h3>Chuyen muc</h3>
+            <h3>chuyên mục</h3>
             <div className={styles.btnCategory}>
                 <button><p>Goc yeu thuong</p></button>
                 <button><p>Hoat dong tinh nguyen</p></button>
