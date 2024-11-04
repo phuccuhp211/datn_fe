@@ -1,11 +1,17 @@
 // Trangchu.js
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React ,{ useState }from 'react';
+import { Link , useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
 
 function Trangchu({ user , setUser}) {
+  const navigate = useNavigate(); // Khởi tạo navigate
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const handleLogout = () => {
     setUser(null); // Đặt user về null khi đăng xuất
+    setIsDropdownOpen(false); // Đóng dropdown sau khi đăng xuất
+    navigate('/');
+
   };
   return (
     <div className={styles.container}>
@@ -18,14 +24,28 @@ function Trangchu({ user , setUser}) {
               <p>hochiminh - viet nam</p>
             </div>
 
-           <div className={styles.login}>
-           {user ? (
-                 <p  onClick={handleLogout}> Chào, {user.name}!</p> 
-          ) : (
-           <Link to="/login" >Dang nhap</Link>
-          )}
-
-           </div>
+            <div className={styles.login}>
+            {user ? (
+              <div className={styles.userProfile} onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                <button className={styles.userButton}>
+                  Chào, {user.name}!▼
+                </button>
+                {isDropdownOpen && (
+                  <div className={styles.dropdownMenu}>
+                    <Link to="/profile" className={styles.menuItem}>Thông Tin User</Link>
+                    <button onClick={handleLogout} className={styles.menuItem}>Đăng Xuất</button>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className={styles.btnLogin}>
+                <button >
+                <Link className={styles.linkLogout} to="/login">Đăng nhập</Link>
+              </button>
+              </div>
+              
+            )}
+          </div>
           </div>
         </div>
 

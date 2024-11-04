@@ -1,0 +1,178 @@
+.profileContainer {
+    margin: 30px auto;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+  
+  
+  .profilePicture img {
+   width: 100%;
+   height: 580px;
+   opacity: 0.8;
+  }
+  
+  .profileInfo {
+    padding: 30px 10px 30px 0px;
+   
+    flex: 1;
+   
+  }
+  
+  .profileInfo h2 {
+    font-size: 35px;
+    margin-bottom: 16px;
+  }
+  
+  .infoGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(37, 37, 40);
+    padding: 5px 0px;
+    border-radius: 10px;
+  }
+  
+  .infoGroup label {
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  .infoGroup input{
+    width: 500px;
+    height: 50px;
+    font-size: 17px;
+    padding-left: 20px;
+    margin-right: 30px;
+    background-color: #ffffff;
+    border: #f8f8f8;
+  }
+  .updateBtn, .changePasswordBtn {
+    
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+  }
+  .purchaseHistoryLink{
+    display: inline-block;
+    margin-top: 20px;
+    width: 250px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .updateBtn {
+    background-color: #4CAF50;
+  }
+  
+  .changePasswordBtn {
+    background-color: #2196F3;
+  }
+  
+  .purchaseHistoryLink {
+    background-color: #6c757d;
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    margin-left: 5px;
+    float: right;
+  }
+  
+  
+  
+  
+  .cartContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  .cartContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cartItem {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  .cartProduct{
+    display: flex;
+    align-items: center;
+    padding: 10px  0px;
+    border-bottom: 1px solid black;
+  }
+  .cartItem img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  .itemDetails {
+    flex-grow: 1;
+  }
+  
+  .itemName {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .itemPrice {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .itemPrice .oldPrice {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+  }
+  
+  .itemTotal {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .itemTotal .str{
+    font-size: 18px;
+    
+  }
+  
+  .totalPrice {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  .scrollItem{
+    height: 400px; /* Đặt chiều cao tối đa */
+    overflow-y: auto; /* Tạo thanh cuộn dọc */
+  }
+  .scrollProfile{
+    height: 400px;
+  }

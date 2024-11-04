@@ -4,7 +4,7 @@ import { Link ,useNavigate} from 'react-router-dom';
 function Login({ setUser }) {
     // Mảng chứa thông tin người dùng giả định
     const users = [
-    { id: 1, email: 'user1@example.com', password: 'password1', name: 'User One' },
+    { id: 1, email: 'minh@gmail.com', password: '11111111', name: 'User One' },
     { id: 2, email: 'user2@example.com', password: 'password2', name: 'User Two' },
     { id: 3, email: 'user3@example.com', password: 'password3', name: 'User Three' }
   ];

@@ -15,6 +15,7 @@ import New from './tintuc/New';
 import DetailNew from './tintuc/DetailNew';
 import FormVolunteer from './tinhnguyen/FormVolunteer';
 import Vaccin from './tiemphong/Vaccin';
+import UserProfile from './profile/UserProfile';
 
 
 function AppRouter() {
@@ -36,6 +37,7 @@ function AppRouter() {
       <Route path="/tintuc/:1" element={<DetailNew />} />
       <Route path="/dangkytinhnguyen" element={<FormVolunteer />} />
       <Route path="/vaccin" element={<Vaccin />} />
+      <Route path="/profile" element={<UserProfile />} />
     </Routes>
     </>
   );
