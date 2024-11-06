@@ -16,9 +16,6 @@ import DetailNew from './tintuc/DetailNew';
 import FormVolunteer from './tinhnguyen/FormVolunteer';
 import Vaccin from './tiemphong/Vaccin';
 import UserProfile from './profile/UserProfile';
-import Adopt from './adopt';
-import DetailAdopt from './DetailAdopt';
-import AdoptionForm from './FromNhannuoi';
 
 
 function AppRouter() {
@@ -28,9 +25,6 @@ function AppRouter() {
     <Header user={user}  setUser={setUser} /> {/* Hiển thị Header và truyền user */}
     <Routes>
       <Route path="/" element={<Trangchu />} />
-      <Route path="/nhannuoi" element={<Adopt />} />
-      <Route path="/nhannuoi/chitiet" element={<DetailAdopt />} />
-      <Route path="/nhannuoi/dangky" element={<AdoptionForm />} />
       <Route path="/Products" element={<Products />} />
       <Route path="/product/:id" element={<Product />} />
       <Route path="/giohang" element={<Giohang />} />
