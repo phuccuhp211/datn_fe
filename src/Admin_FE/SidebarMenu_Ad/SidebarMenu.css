@@ -1,0 +1,39 @@
+/* SidebarMenu.css */
+
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #080808;
+}
+
+.menu-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e0e0e0; /* Màu nền mặc định */
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu mượt */
+}
+
+/* Màu khi hover */
+.menu-link:hover .menu-item {
+  background-color: #09141f; /* Màu khi hover */
+  color: rgb(209, 220, 154);
+}
+
+/* Màu khi mục được chọn (trang hiện tại) */
+.menu-link.active .menu-item {
+  background-color: #0c1f34; /* Màu nổi bật khi được chọn */
+  color: rgb(212, 247, 85);
+  font-weight: bold;
+}

@@ -1,9 +1,8 @@
 import './adopt.css';
 import { useContext, useEffect, useState } from "react";
-import { dataContext } from "./dataContext";
 import { Link } from "react-router-dom";
 import DMAdopt from './DMNhannuoi';
-import Statistical from './trangchu/home/Statistical';
+import Statistical from './../Home/home/Statistical';
 
 
 function Adopt() {
@@ -16,9 +15,6 @@ function Adopt() {
         { "id": "6", "ten_sp": "Loptop 6", "hinh": "https://cdn.tgdd.vn/Products/Images/44/306795/lg-gram-2023-i7-17z90rgah78a5-1.jpg", "gia": "6 usd" },
        
     ];
-    // const [listsp, SetListSP] = useState([])
-    const d = useContext(dataContext);
-    console.log(d.tygia)
     return (
         <div className='container'>
             <div>
@@ -28,15 +24,12 @@ function Adopt() {
               {arr
                 .map((sp, i) => (
                   <div className="nhannuoi" key={i}>
-                    {/* <div className="nhannuoi_img"> */}
-                      {/* <Link to={"/sp/" + sp.id}> */}
+                        <Link to={`/nhannuoi/chitiet`}>
                         <img 
                           className="img"
                           src={sp["hinh"]}
                           alt={sp["ten_sp"]}
-                        ></img>
-                      {/* </Link> */}
-                    {/* </div> */}
+                        ></img></Link>
                       <div className="nhannuoi_chitiet">
                         <h2>{sp["ten_sp"]}</h2>
                         <p><span>Giới tính:</span> {sp["ten_sp"]}</p>

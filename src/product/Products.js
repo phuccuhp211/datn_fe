@@ -3,7 +3,7 @@ import React from 'react';
 
 import IntrodutionProduct from './sanpham-js/IntrodutionProduct';
 import SearchProduct from './sanpham-js/SearchProduct';
-import Product from '../trangchu/home/Product';
+import Product from '../Home/home/Product';
 function Products() {
   return (
     <div>

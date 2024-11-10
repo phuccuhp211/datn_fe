@@ -5,11 +5,11 @@ import Footers from './include/Footers';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './Router'; 
 import './App.css';
-import Cuontrang from './Cuontrang'; // Nhập component bạn vừa tạo
+import ScrollToTop from './ScrollPage'; // Nhập component bạn vừa tạo
 function App() {
   return (
     <BrowserRouter >
-    <Cuontrang/>
+    <ScrollToTop/>
     {/* <Headers/> */}
    <AppRouter>
    </AppRouter>

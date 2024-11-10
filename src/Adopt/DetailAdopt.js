@@ -85,27 +85,13 @@ function Adopt() {
                           className="img"
                           src={sp["hinh"]}
                           alt={sp["ten_sp"]}
-                        ></img>
-                      {/* </Link> */}
-                    {/* </div> */}
+                        > <Link to={"/nhannuoi/chitiet" }></Link></img>
                       <div className="nhannuoi_chitiet">
                         <h2>{sp["ten_sp"]}</h2>
                         <p><span>Giới tính:</span> {sp["ten_sp"]}</p>
                         <p><span>Độ tuổi:</span> {sp["ten_sp"]}</p>
                         <p><span>Tiêm phòng:</span> {sp["ten_sp"]}</p>
                       </div>
-                    {/* <div className="sp-info">
-                      <h4>
-                        <Link to={"/sp/" + sp.id}>
-                          {sp["ten_sp"]}
-                        </Link>
-                      </h4>
-                      <p>
-                        <b>
-                          {sp["gia"].split(' ')[0]*d.tygia} {sp["gia"].split(' ')[1]}
-                        </b>     
-                      </p>
-                    </div>              */}
                   </div>
                 ))}
             </div>
