@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './../Cart_Ad/Card';
+import Card from './../Cart/Card';
 import './Dashboard.css';
 
 function Dashboard() {

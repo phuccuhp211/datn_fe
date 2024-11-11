@@ -63,7 +63,7 @@
 /* ----------------------- TIM KIEM -------------------------- */
 .searchProducts{
     margin-top: 40px;
-    background-image: url('../../../public/image/thongke.png');
+    background-image: url('../../../../public/image/thongke.png');
     padding: 65px 0px;
     background-size: cover;
 }
