@@ -41,8 +41,8 @@ function AppRouter() {
     <>
     <Header user={user} setUser={setUser} /> {/* Hiển thị Header và truyền user */}
     <Routes>
-      <Route path="/" element={<Trangchu/>} >
-        {/* <Route path="/" element={<Trangchu />} /> */}
+      <Route path="/" element={<App/>} >
+        <Route path="/" element={<Trangchu />} />
         <Route path="/nhannuoi" element={<Adopt />} />
         <Route path="/nhannuoi/chitiet" element={<DetailAdopt />} />
         <Route path="/nhannuoi/dangky" element={<AdoptionForm />} />

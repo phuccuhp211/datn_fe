@@ -5,12 +5,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './Router';
+import ScrollToTop from './ScrollPage';
+import Footers from './clients/include/Footers';  
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    
+    <BrowserRouter >
+    <ScrollToTop/>
+    {/* <Headers/> */}
+   <AppRouter/>
+
+
+    {/* <Outlet></Outlet> */}
+    <Footers/>
+  </BrowserRouter>
     
   </React.StrictMode>
 );

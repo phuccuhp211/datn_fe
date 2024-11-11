@@ -8,15 +8,7 @@ import './App.css';
 import ScrollToTop from './ScrollPage'; // Nhập component bạn vừa tạo
 function App() {
   return (
-    <BrowserRouter >
-    <ScrollToTop/>
-    {/* <Headers/> */}
-   <AppRouter/>
-
-
-    {/* <Outlet></Outlet> */}
-    <Footers/>
-  </BrowserRouter>
+    <Outlet></Outlet>
   );
 }
 
